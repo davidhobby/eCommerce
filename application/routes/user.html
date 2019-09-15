@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Edit User Info</title>
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="public/css/style.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<!-- <link type="text/css" rel="stylesheet" href="public/css/checkout-sidebar.css" />
+			<script type="text/javascript" src="public/js/classie.js"></script> -->
+			    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+	</head>
+
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- top Header -->
+		<div id="top-header">
+			<div class="container">
+				<div class="pull-left">
+					<span>Welcome to CSC667-Team08 Ecommerce Website
+					</span>
+				</div>
+				<div class="pull-right">
+				</div>
+			</div>
+		</div>
+
+
+	<!-- header -->
+	<div id="header">
+		<div class="container container-fluid">
+			<div class="pull-left">
+				<!-- Logo -->
+				<div class="header-logo">
+					<a class="logo" href="welcome.html">
+						<img src="public/img/Login/logo.png" style="width:200px;height:50px;">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Search -->
+				<div class="header-search">
+
+					<form>
+						<input class="input search-input" id="searchTerm" type="text" placeholder="Enter your keyword">
+						</input>
+
+
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+
+				</div>
+				<!-- /Search -->
+			</div>
+			<div class="pull-right">
+				<ul class="header-btns">
+
+					<!-- Account -->
+					<li class="header-account dropdown default-dropdown">
+						<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+							<div class="header-btns-icon">
+								<i class="fa fa-user-o"></i>
+							</div>
+							<strong class="text-uppercase">My Account </strong>
+						</div>
+						<a href="/login " class="text-uppercase">Login</a>
+					</li>
+					<!-- /Account -->
+
+					<!-- Cart -->
+					<li class="header-cart dropdown default-dropdown">
+						<a class="dropdown-toggle">
+							<div class="header-btns-icon">
+								<i class="fa fa-shopping-cart"></i>
+							</div>
+							<strong class="text-uppercase">My Cart</strong>
+							<br>
+						</a>
+						<a href="/cart" class="text-uppercase">View</a>
+
+
+					</li>
+					<!-- /Cart -->
+				</ul>
+			</div>
+		</div>
+		<!-- header -->
+	</div>
+	<!-- container -->
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("nav_userdashboard.html");
+	});
+	</script>
+
+</header>
+
+	<!-- /HEADER -->
+
+
+
+
+<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /section -->
+
+
+                 <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Edit Profile</h4>
+                            </div>
+                            <div class="content">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label>Company (disabled)</label>
+                                                <input type="text" class="form-control" disabled placeholder="Company" value="E-Commerce">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label>Username</label>
+                                                <input type="text" class="form-control" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>First Name</label>
+                                                <input type="text" class="form-control" placeholder="First Name" >
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input type="text" class="form-control" placeholder="Home Address" >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>City</label>
+                                                <input type="text" class="form-control" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Country</label>
+                                                <input type="text" class="form-control" placeholder="Country">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Postal Code</label>
+                                                <input type="number" class="form-control" placeholder="ZIP Code">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Phone Number</label>
+                                                <input type="number" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+
+                                         <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Credit Card Number</label>
+                                                <input type="number" class="form-control" placeholder="Credit Card">
+                                            </div>
+                                        </div>
+
+                                         <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Security Number</label>
+                                                <input type="number" class="form-control" placeholder="Security Number">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title> eCommerce </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="public/css/style.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<!-- <link type="text/css" rel="stylesheet" href="public/css/checkout-sidebar.css" />
+			<script type="text/javascript" src="public/js/classie.js"></script> -->
+			    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<!-- <link type="text/css" rel="stylesheet" href="public/css/checkout-sidebar.css" />-->
+				<script >
+				function checkout()
+				{
+				//var xmlReq = new XMLHttpRequest();
+			//xmlReq.open('POST', '/checkout', true);
+			//xmlReq.responseType = "";
+			//xmlReq.send(null);
+			window.alert("Thanks for shopping");
+				}
+		</script>
+
+							<script type="text/javascript">
+
+							function checkCookie() {
+									var cookies = document.cookie.replace(/ /g,'').split(';');
+									var cookiePresent = false;
+									console.log(document.cookie);
+									for(var i = 0; i < cookies.length; i++) {
+											if(cookies[i].startsWith('connect.sid=')) {
+													cookiePresent = true;
+													break;
+											}
+									}
+
+									if(cookiePresent) {
+											document.getElementById("login").innerHTML = '';
+											document.getElementById("register").innerHTML  = '';
+											document.getElementById("logout").style.visibility = 'visible';
+									}
+
+									else {
+											document.getElementById("login").style.visibility = 'visible';
+											document.getElementById("register").style.visibility = 'visible';
+											document.getElementById("logout").innerHTML = ' ';
+									}
+							}
+
+							</script>
+
+  </head>
+	<!-- HEADER -->
+	<header>
+			<!-- top Header -->
+			<div id="top-header">
+				<div class="container">
+					<div class="pull-left">
+						<span>Welcome to CSC667-Team08 Ecommerce Website
+						</span>
+					</div>
+					<div class="pull-right">
+					</div>
+				</div>
+			</div>
+
+			<!-- header -->
+			<div id="header">
+				<div class="container">
+					<div class="pull-left">
+						<!-- Logo -->
+						<div class="header-logo">
+							<a class="logo" href="index.html">
+								<img src="public/img/Login/logo.png" style="width:200px;height:50px;">
+							</a>
+						</div>
+						<!-- /Logo -->
+
+						<!-- Search -->
+						<div class="header-search">
+
+							<form>
+								<input class="input search-input" id="searchTerm" type="text" placeholder="Enter your keyword">
+								</input>
+
+
+								<button class="search-btn"><i class="fa fa-search"></i></button>
+							</form>
+
+						</div>
+						<!-- /Search -->
+					</div>
+					<div class="pull-right">
+						<ul class="header-btns">
+
+							<!-- Account -->
+							<li class="header-account dropdown default-dropdown">
+								<div>
+										<div class="header-btns-icon">
+												<i class="fa fa-user-o"></i>
+											</div>
+									<strong><a href="/account" class="text-uppercase">My Account</a></strong>
+								</div>
+								<a href="/logout" id="logout"
+									class="text-uppercase"> Logout</a>	<a href="/login "  id="login" class="text-uppercase">Login</a>  <a href="/register" id="register"
+									class="text-uppercase"> /New</a>
+							</li>
+							<!-- /Account -->
+
+							<!-- Cart -->
+
+							<!-- /Cart -->
+							<!-- Mobile nav toggle-->
+
+							<!-- / Mobile nav toggle -->
+						</ul>
+					</div>
+				</div>
+				<!-- header -->
+			</div>
+
+
+       <!--Navigation bar -->
+			<div id="nav-placeholder">
+
+			</div>
+
+			<script>
+			$(function(){
+				$("#nav-placeholder").load("nav_otherPage_except_products.html");
+			});
+			</script>
+
+
+
+
+</header>
+<body onload="checkCookie(), displayCart(2)">
+	<!-- HEADER -->
+	<!-- section -->
+	<div class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+
+				<form id="checkout-form" class="clearfix"action ="/checkout" method ="post">
+					<div class="col-md-4">
+						<div class="billing-details-style">
+
+							<div class="section-title">
+								<h3 class="title">Billing Details</h3>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="firstname" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="lastname" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="address" placeholder="Address" required>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="city" placeholder="City" required>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="country" placeholder="Country" required>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="zipcode" placeholder="ZIP Code" required>
+							</div>
+							<div class="form-group">
+								<input class="input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="tel" placeholder="Phone" oninvalid="alert('Please check the phone number format');" required >
+							<small> Format xxx-xxx-xxxx
+							</div>
+							<div class="form-group">
+
+							</div>
+							
+						</div>	
+					</div>
+
+
+							<div class="col-md-5">
+												<h3 class="title" style="padding-left:110px;">Review Your Cart:</h3>
+						<div id="DisplayShoppingCart"class="New_ShoppingCart_UI_Checkout">
+							<script src="catalog.js"></script>
+						</div>
+					</div>
+
+
+										<div class="col-md-3">
+											<div class="shiping-methods_style">
+												<div class="section-title">
+
+																<h3 class="title">Shipping Methods</h3>
+
+												</div>
+												<div class="input-checkbox">
+													<a>  </a>
+													<input type="radio" name="shipping" id="shipping-1" checked>
+													<label for="shipping-1">Free Shipping -  $0.00</label>
+													<div class="caption">
+														<p>Delivery needs 7-10 days.
+															<p>
+													</div>
+												</div>
+												<div class="input-checkbox">
+													<a>  </a>
+													<input type="radio" name="shipping" id="shipping-2" checked>
+													<label for="shipping-1">UPS Shipping -  $18.00</label>
+													<div class="caption">
+														<p>Delivery needs 1-2 days.
+															<p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+									</form>
+<!---------------
+									<div class="checkout_button">
+										<button class="primary-btn" id="placeorder-btn" onclick ="checkout()" >Place Order</button>
+									</div>---------------->
+									<!-------------
+									<div class="checkout_button">
+											<a href="index.html">
+										<button class="primary-btn" id="placeorder-btn" onclick="checkout()">Place Order</button>
+									</a>
+									</div>----------------->
+								</div>
+								<!-- /row -->
+							</div>
+							<!-- /container -->
+
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="section section-grey">
+			<hr>
+			<div class="row" >
+					<center>
+				<p>CSC-667-Summer 2019-Team08-Website</p>
+			</center>
+			</div>
+
+	</footer>
+	<!-- FOOTER -->
+
+
+</body>
+
+</html>

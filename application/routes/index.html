@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title> eCommerce </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="public/css/style.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<!-- <link type="text/css" rel="stylesheet" href="public/css/checkout-sidebar.css" />
+			<script type="text/javascript" src="public/js/classie.js"></script> -->
+			    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+					<script type="text/javascript">
+
+					function checkCookie() {
+							var cookies = document.cookie.replace(/ /g,'').split(';');
+							var cookiePresent = false;
+							console.log(document.cookie);
+							for(var i = 0; i < cookies.length; i++) {
+									if(cookies[i].startsWith('connect.sid=')) {
+											cookiePresent = true;
+											break;
+									}
+							}
+
+							if(cookiePresent) {
+									document.getElementById("login").innerHTML = '';
+									document.getElementById("register").innerHTML  = '';
+									document.getElementById("logout").style.visibility = 'visible';
+							}
+
+							else {
+									document.getElementById("login").style.visibility = 'visible';
+									document.getElementById("register").style.visibility = 'visible';
+									document.getElementById("logout").innerHTML = ' ';
+							}
+					}
+
+		</script>
+</head>
+
+<!-- HEADER -->
+<header>
+
+	<div id="top-header">
+		<div class="container">
+			<div class="pull-left">
+				<span>Welcome to CSC667-Team08 Ecommerce Website
+				</span>
+			</div>
+			<div class="pull-right">
+
+			</div>
+		</div>
+	</div>
+	<!-- /top Header -->
+
+	<!-- header -->
+	<div id="header">
+		<div class="container container-fluid">
+			<div class="pull-left">
+				<!-- Logo -->
+				<div class="header-logo">
+					<a class="logo" href="/">
+						<img src="public/img/Login/logo.png" style="width:200px;height:50px;">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Search -->
+				<div class="header-search">
+
+					<form>
+						<input class="input search-input" id="searchTerm" type="text" placeholder="Enter your keyword">
+						</input>
+
+
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+
+				</div>
+				<!-- /Search -->
+			</div>
+			<div class="pull-right">
+				<ul class="header-btns">
+
+					<!-- Account -->
+					<li class="header-account dropdown default-dropdown">
+						<div>
+								<div class="header-btns-icon">
+										<i class="fa fa-user-o"></i>
+									</div>
+							<strong><a href="/account" class="text-uppercase">My Account</a></strong>
+						</div>
+						<a href="/logout" id="logout"
+							class="text-uppercase"> Logout</a>	<a href="/login "  id="login" class="text-uppercase">Login</a>  <a href="/register" id="register"
+							class="text-uppercase"> /New</a>
+					</li>
+					<!-- /Account -->
+				</ul>
+			</div>
+		</div>
+
+	<!-- container -->
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("nav.html");
+	});
+	</script>
+
+</header>
+
+
+<body onload="checkCookie(), loadData(1),displayCart(1)">
+
+
+	<div id ="catalog" class="main" style="width:60%; min-width: 200px; float:left;">
+		<script src="catalog.js"></script>
+	</div>
+
+
+				<div id="DisplayShoppingCart"class="New_ShoppingCart_UI" style="width:432px;">
+
+
+</div>
+
+</body>
+
+
+
+
+
+</html>

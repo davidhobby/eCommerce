@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+	<title> Vegetables </title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="public/css/font-awesome.min.css">
+		<script src="public/js/Main.js"></script>
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css" />
+
+		<!-- Font Awesome Icon -->
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="public/css/style.css" />
+
+	</head>
+
+
+
+	<!-- HEADER -->
+	<header>
+		<!-- top Header -->
+		<div id="top-header">
+			<div class="container">
+				<div class="pull-left">
+					<span>Welcome to CSC667-Team08  Ecommerce Website
+	</span>
+				</div>
+				<div class="pull-right">
+
+				</div>
+			</div>
+		</div>
+		<!-- /top Header -->
+
+		<!-- header -->
+		<div id="header">
+			<div class="container">
+				<div class="pull-left">
+					<!-- Logo -->
+					<div class="header-logo">
+						<a class="logo" href="index.html">
+							<img src="public/img/Login/logo.png"  style="width:200px;height:50px;">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Search -->
+					<div class="header-search">
+
+						<form>
+							<input class="input search-input" id="searchTerm" type="text" placeholder="Enter your keyword">
+						</input>
+							<select id="category" class="input search-categories">
+							<option selected>All</option>
+							<option>Fruit</option>
+							<option>Beverage</option>
+							<option>SeaFood</option>
+							<option>Poultry</option>
+							<option>Vegetables</option>
+						</select>
+
+							<button class="search-btn"><i class="fa fa-search"></i></button>
+						</form>
+
+					</div>
+					<!-- /Search -->
+				</div>
+				<div class="pull-right">
+					<ul class="header-btns">
+
+						<!-- Account -->
+						<li class="header-account dropdown default-dropdown">
+							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-user-o"></i>
+								</div>
+								<strong class="text-uppercase">My Account </strong>
+							</div>
+							<a href="/login" class="text-uppercase">Login</a> / <a href="/register" class="text-uppercase">SignUp</a>
+						</li>
+						<!-- /Account -->
+
+						<!-- Cart -->
+				<li class="header-cart dropdown default-dropdown">
+					<a class="dropdown-toggle">
+						<div class="header-btns-icon">
+							<i class="fa fa-shopping-cart"></i>
+						</div>
+						<strong class="text-uppercase">My Cart</strong>
+						<br>
+							</a>
+					<a href="ShoppingCartPage.html" class="text-uppercase">View</a>
+
+
+				</li>
+				<!-- /Cart -->
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+
+		</button>
+	  </div>
+	  <div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+     		<li><button id="navigationbuttonstyle" onclick="loadData(1)">Fruits</li>
+			<li><button id="navigationbuttonstyle" onclick="loadData(2)">Vegetables</button></li>
+			<li><button id="navigationbuttonstyle" onclick="loadData(3)">Seafood</button></li>
+			<li><button id="navigationbuttonstyle" onclick="loadData(4)">Meat</button></li>
+			<li><button id="navigationbuttonstyle"> <a style = "color:white" href="pastorder.html">PastOrder</a></button></li>
+			<li><button id="navigationbuttonstyle" onclick="openmodal()"> ShoppingCart</button></li>
+
+		</ul>
+	  </div>
+	</div>
+  </nav>
+	<img src="public/img/Homepage-background.png" class="img-fluid" alt="Responsive image" style="width: 1500px; height: 400px;">
+
+<body>
+	<!-- FOOTER -->
+<footer id="footer" class="section section-grey">
+	<div class="container">
+			<div class="row">
+			</div>
+					<hr >
+						<center>
+								<p>CSC-667-Summer 2019-Team08-Website-Ecommerce</p>
+						</center>
+				</hr>
+	</div>
+</footer>
+	<!-- /FOOTER -->
+
+</body>
+
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> UserDashboard </title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="public/css/bootstrap.min.css" />
+
+	<link type="text/css" rel="stylesheet" href="public/css/style.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+		<!-- <link type="text/css" rel="stylesheet" href="public/css/checkout-sidebar.css" />
+			<script type="text/javascript" src="public/js/classie.js"></script> -->
+			    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+</head>
+
+<!-- HEADER -->
+
+
+<header>
+	<!-- top Header -->
+	<div id="top-header">
+		<div class="container">
+			<div class="pull-left">
+				<span>Welcome to CSC667-Team08 Ecommerce Website
+				</span>
+			</div>
+			<div class="pull-right">
+
+			</div>
+		</div>
+	</div>
+	<!-- /top Header -->
+
+	<!-- header -->
+	<div id="header">
+		<div class="container container-fluid">
+			<div class="pull-left">
+				<!-- Logo -->
+				<div class="header-logo">
+					<a class="logo" href="welcome.html">
+						<img src="public/img/Login/logo.png" style="width:200px;height:50px;">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Search -->
+				<div class="header-search">
+
+					<form>
+						<input class="input search-input" id="searchTerm" type="text" placeholder="Enter your keyword">
+						</input>
+
+
+						<button class="search-btn"><i class="fa fa-search"></i></button>
+					</form>
+
+				</div>
+				<!-- /Search -->
+			</div>
+			<div class="pull-right">
+				<ul class="header-btns">
+
+					<!-- Account -->
+					<li class="header-account dropdown default-dropdown">
+						<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+							<div class="header-btns-icon">
+								<i class="fa fa-user-o"></i>
+							</div>
+							<strong class="text-uppercase">My Account </strong>
+						</div>
+						<a href="/logout " class="text-uppercase">Logout</a>
+					</li>
+					<!-- /Account -->
+
+					<!-- Cart -->
+					<li class="header-cart dropdown default-dropdown">
+						<a class="dropdown-toggle">
+							<div class="header-btns-icon">
+								<i class="fa fa-shopping-cart"></i>
+							</div>
+							<strong class="text-uppercase">My Cart</strong>
+							<br>
+						</a>
+						<a href="/cart" class="text-uppercase">View</a>
+
+
+					</li>
+					<!-- /Cart -->
+				</ul>
+			</div>
+		</div>
+		<!-- header -->
+	</div>
+	<!-- container -->
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("nav_userdashboard.html");
+	});
+	</script>
+</header>
+
+
+<body>
+
+<body>
+<div class="title">
+    <h1> View Recent Orders</h1>
+
+</div>
+
+<!--table for display-->
+<table width="90%" id="mytab"  border="1" class="t1">
+  <thead>
+    <th width="10%">OrderId</th>
+    <th width="30%">UserId</th>
+    <th width="20%">OrderDate</th>
+    <th width="30%">Status</th>
+    <th width="10%">Address</th>
+    <th width="10%">Phone</th>
+  </thead>
+  <tr class="a1">
+    <td id="OrderID">1111</td>
+    <td id="UserID">22222</td>
+    <td id="OrderDate">2019-8-4</td>
+    <td id="Status">Shipped</td>
+    <td id="Address">San Francisco</td>
+    <td id="Phone">415-999-9999</td>
+  </tr>
+
+</table>
+
+
+</body>
+</html>

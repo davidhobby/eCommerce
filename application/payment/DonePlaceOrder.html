@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Thank you for your order ! </title>
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="css/slick.css" />
+	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+	<!-- nouislider -->
+	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+	<!-- HEADER -->
+	<header>
+		<!-- top Header -->
+		<div id="top-header">
+			<div class="container">
+				<div class="pull-left">
+					<span>
+</span>
+				</div>
+				<div class="pull-right">
+
+				</div>
+			</div>
+		</div>
+		<!-- /top Header -->
+
+		<!-- header -->
+		<div id="header">
+			<div class="container">
+				<div class="pull-left">
+
+					<!-- Logo -->
+					<div class="header-logo">
+						<a class="logo" href="HomePage.html">
+							<img src="./img/./Login/logo.png"   style="width:200px;height:50px;">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Search -->
+					<div class="header-search">
+						<form>
+							<input class="input search-input" type="text" placeholder="Enter your keyword">
+							<select class="input search-categories">
+								<option value="0">All Categories</option>
+								<option value="1">Fruits</option>
+								<option value="2">Vegetables</option>
+									<option value="3">Poultry</option>
+										<option value="4">SeaFood</option>
+											<option value="5">Beverage</option>
+
+
+							</select>
+							<button class="search-btn"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<!-- /Search -->
+				</div>
+				<div class="pull-right">
+					<ul class="header-btns">
+						<!-- Account -->
+						<li class="header-account dropdown default-dropdown">
+							<div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-user-o"></i>
+								</div>
+								<strong class="text-uppercase">My Account </strong>
+							</div>
+							<a href="Login.html" class="text-uppercase">Login</a> / <a href="Register.html" class="text-uppercase">New</a>
+
+							<ul class="custom-menu">
+								<li><a href="userdashboard/userdashboard.html"><i class="fa fa-user-o"></i> User Dashboard</a></li>
+
+							</ul>
+
+
+						</li>
+						<!-- /Account -->
+
+						<!-- Cart -->
+						<li class="header-cart dropdown default-dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+								<div class="header-btns-icon">
+									<i class="fa fa-shopping-cart"></i>
+									<span class="qty">99999</span>
+								</div>
+							<strong class="text-uppercase">My Cart:</strong>
+								<br>
+								<a href="checkout.html" class="text-uppercase">Check 					<span>    $</span></a>
+
+
+							</a>
+		<!-- container -->
+	</header>
+	<!-- /HEADER -->
+
+	<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+
+		</button>
+	  </div>
+	  <div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+     		<li><button id="navigationbuttonstyle" onclick="loadData(1)">Fruits</li>
+			<li><button id="navigationbuttonstyle" onclick="loadData(2)">Vegetables</button></li>
+			<li><button id="navigationbuttonstyle" onclick="loadData(3)">Seafood</button></li>
+			<li><button id="navigationbuttonstyle" onclick="loadData(4)">Meat</button></li>
+			<li><button id="navigationbuttonstyle"> <a style = "color:white" href="pastorder.html">PastOrder</a></button></li>
+			<li><button id="navigationbuttonstyle" onclick="openmodal()"> ShoppingCart</button></li>
+
+		</ul>
+	  </div>
+	</div>
+  </nav>
+</header>
+
+
+<div class="jumbotron text-xs-center">
+  <h1 class="display-3">Thank You!</h1>
+  <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
+  <hr>
+  <p>
+    Having trouble? <a href="">Contact us</a>
+  </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" href="HomePage.html" role="button">Continue to homepage</a>
+  </p>
+</div>
+
+
+
+
+
+</html>
